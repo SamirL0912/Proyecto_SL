@@ -24,7 +24,7 @@ class Initial extends StatelessWidget {
         fit: StackFit.expand,
         children: [
           Image.network(
-            'https://upload.wikimedia.org/wikipedia/commons/c/c5/Trofeo_UEFA_Champions_League.jpg',
+            'https://i.pinimg.com/736x/1f/77/cb/1f77cbe0c81629fc5c56cfe07d4f180e.jpg',
             fit: BoxFit.cover,
           ),
           Center(
@@ -32,7 +32,7 @@ class Initial extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  "Welcome To Madrid",
+                  "Welcome\nTo\nMadrid",
                   style: TextStyle(
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
@@ -45,7 +45,7 @@ class Initial extends StatelessWidget {
             ),
           ),
           Positioned(
-            bottom: 40,
+            bottom: 100,
             left: 0,
             right: 0,
             child: Center(
@@ -64,8 +64,8 @@ class Initial extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                     ),
                   ),
-                  icon: const Icon(Icons.cake, size: 30),
-                  label: const Text('Iniciar', style: TextStyle(fontSize: 20)),
+                  //icon: const Icon(Icons.cake, size: 30)
+                  label: const Text('Iniciar', style: TextStyle(fontSize: 25)),
                 ),
               ),
             ),
