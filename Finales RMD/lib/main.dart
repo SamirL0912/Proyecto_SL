@@ -1,3 +1,4 @@
+import 'package:aplication/featute/home/presentation/view/failed_views.dart';
 import 'package:aplication/featute/home/presentation/view/loading_view.dart';
 import 'package:flutter/material.dart';
 import 'featute/home/presentation/view/initial_view.dart';
@@ -20,6 +21,6 @@ class Inicio extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Loading();
+    return Failed();
   }
 }
