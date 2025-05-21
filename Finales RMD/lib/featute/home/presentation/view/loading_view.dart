@@ -20,7 +20,7 @@ class Loading extends StatelessWidget {
           ),
 
           BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+            filter: ImageFilter.blur(sigmaX: 7, sigmaY: 7),
             child: Container(color: Colors.black.withOpacity(0)),
           ),
           Center(
