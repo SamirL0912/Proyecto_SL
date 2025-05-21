@@ -9,7 +9,7 @@ class Initial extends StatelessWidget {
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         title: const Text(
-          'Finales',
+          'El Siglo',
           style: TextStyle(
             fontSize: 30,
             color: Colors.white,
