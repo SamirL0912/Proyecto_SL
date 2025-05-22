@@ -1,6 +1,5 @@
 import 'package:aplication/bloc/home_bloc.dart';
 import 'package:aplication/featute/home/presentation/view/failed_view.dart';
-
 import 'package:aplication/featute/home/presentation/view/loading_view.dart';
 import 'package:aplication/featute/home/presentation/view/success_view.dart';
 import 'package:flutter/material.dart';
