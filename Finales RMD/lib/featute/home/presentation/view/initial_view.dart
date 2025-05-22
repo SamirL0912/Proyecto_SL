@@ -1,4 +1,6 @@
+import 'package:aplication/bloc/home_bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class Initial extends StatelessWidget {
   const Initial({super.key});
@@ -54,6 +56,7 @@ class Initial extends StatelessWidget {
                 height: 60,
                 child: ElevatedButton.icon(
                   onPressed: () {
+                    context.read<HomeBloc>().add(HomeSearchPressed());
                     // Acción búsqueda
                   },
                   style: ElevatedButton.styleFrom(
