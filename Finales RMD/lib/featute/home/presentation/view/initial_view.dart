@@ -9,19 +9,19 @@ class Initial extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       extendBodyBehindAppBar: true,
-      appBar: AppBar(
-        title: const Text(
-          'El Siglo',
-          style: TextStyle(
-            fontSize: 30,
-            color: Colors.white,
-            shadows: [Shadow(blurRadius: 4, color: Colors.black)],
-          ),
-        ),
-        centerTitle: true,
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-      ),
+      //appBar: AppBar(
+      //title: const Text(
+      //'El Siglo',
+      //style: TextStyle(
+      //fontSize: 30,
+      //color: Colors.white,
+      //shadows: [Shadow(blurRadius: 4, color: Colors.black)],
+      //),
+      //),
+      //centerTitle: true,
+      //backgroundColor: Colors.transparent,
+      //elevation: 0,
+      //),
       body: Stack(
         fit: StackFit.expand,
         children: [
@@ -30,20 +30,23 @@ class Initial extends StatelessWidget {
             fit: BoxFit.cover,
           ),
           Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  "Welcome\nTo\nMadrid",
-                  style: TextStyle(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                    shadows: [Shadow(blurRadius: 5, color: Colors.black)],
+            child: Padding(
+              padding: const EdgeInsets.only(bottom: 350),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "Welcome\nTo\nMadrid",
+                    style: TextStyle(
+                      fontSize: 55,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                      shadows: [Shadow(blurRadius: 5, color: Colors.black)],
+                    ),
+                    textAlign: TextAlign.center,
                   ),
-                  textAlign: TextAlign.center,
-                ),
-              ],
+                ],
+              ),
             ),
           ),
           Positioned(
@@ -57,7 +60,6 @@ class Initial extends StatelessWidget {
                 child: ElevatedButton.icon(
                   onPressed: () {
                     context.read<HomeBloc>().add(HomeSearchPressed());
-                    // Acción búsqueda
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.black.withOpacity(0.6),
@@ -67,7 +69,6 @@ class Initial extends StatelessWidget {
                       borderRadius: BorderRadius.circular(20),
                     ),
                   ),
-                  //icon: const Icon(Icons.cake, size: 30)
                   label: const Text('Iniciar', style: TextStyle(fontSize: 25)),
                 ),
               ),

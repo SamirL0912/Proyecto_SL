@@ -10,29 +10,23 @@ class Failed extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        fit: StackFit.expand,
-        children: [
-          Image.network(
-            "https://i.pinimg.com/736x/a8/28/3d/a8283da302dafe901e3e204e98d069cf.jpg",
-            fit: BoxFit.cover,
-          ),
-          Center(
-            child: Column(
-              children: [
-                const SizedBox(height: 600),
-                const Text(
-                  "ERROR...",
-                  style: TextStyle(
-                    fontSize: 40,
-                    color: Colors.white,
-                    shadows: [Shadow(blurRadius: 4, color: Colors.black)],
-                  ),
-                ),
-              ],
+      backgroundColor: Colors.black87,
+      body: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Icon(Icons.error_outline, size: 100, color: Colors.redAccent),
+            const SizedBox(height: 20),
+            const Text(
+              "¡Ups! Ocurrió un error",
+              style: TextStyle(
+                fontSize: 28,
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
