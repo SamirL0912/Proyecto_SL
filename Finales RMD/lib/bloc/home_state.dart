@@ -13,4 +13,4 @@ final class HomeLoadInProgress extends HomeState {}
 
 final class HomeLoadSuccess extends HomeState {}
 
-final class HomeLoadFailure extends HomeState {}
+final class HomeFailure extends HomeState {}

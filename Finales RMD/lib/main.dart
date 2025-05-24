@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
               return Success();
             } else if (state is HomeLoadInProgress) {
               return Loading();
-            } else if (state is HomeLoadFailure) {
+            } else if (state is HomeFailure) {
               return Failed();
             }
             return Initial();
